@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image:url(mike.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    width: 100%;
+    min-height: 12vh;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    min-height: 12vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type:none; ;
+}
+.logo{
+    font-size: 2vw;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 1.5vw;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    font-size: 25px;
+    color: #fff;
+}
+.menu a:hover{
+    background-color:rgba(124, 121, 121, 0.416);
+}
+button{
+    background-color: rgba(255, 68, 0, 0.826);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    list-style: none;
+    transition: 0.4s;
+}
+button:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.text{
+    position: absolute;
+    width: 100%;
+    margin: 0 10px;
+    padding: 0 10vw ;
+    color: #fff; 
+    
+}
+.text h1{
+    font-size:5vw ;
+    font-weight: 500;
+}
+
+.bottom{
+    display: flex;
+    height:40vh ;
+    width:100% ;
+}
+.bone{
+    display: absolute;
+    padding: 30px;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    
+}
+.bone p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #444;
+}
+.btwo{
+    width: 25%;
+    height: 100%;
+    background-image: url(parasute.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bthree{
+    width: 20%;
+    height: inherit;
+    display: absolute;
+
+}
+.bfour{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+}
+.notf{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf p{
+    width: 80%;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:550px){
+   .overlay .text{
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ .bottom{
+    flex-direction: column;
+ }
+ .bone{
+    width: 100%;
+    
+ }
+ .btwo{
+    width: 100%;
+   
+    
+ }
+ .bthree{
+    width: 100%;
+    
+    
+ }
+ .bfour{
+    width: 100%;
+
+ }
+ nav li a{
+    font-size: 2vw;
+    font-weight: bold;
+ }
+ .menu-icon{
+    display: flex;
+}
+.menu-icon i{
+    font-size: 25px;
+    color: #fff;
+}
+.menu a{
+    display: none;
+}
+button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    list-style: none;
+}
+.logo{
+    font-size: 5vw;
+    letter-spacing: 1px;
+}
+}

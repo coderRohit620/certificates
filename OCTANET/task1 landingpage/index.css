@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image:url(mic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    width: 100%;
+    min-height: 12vh;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    min-height: 12vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type:none; ;
+}
+.logo{
+    font-size: 2vw;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.5vw;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+.menu-icon{
+    display: flex;
+}
+.menu-icon i{
+    font-size: 25px;
+    color: #fff;
+}
+.menu a:hover{
+    background-color: #f0f0f0;
+}
+button{
+    background-color: rgba(255, 68, 0, 0.826);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    list-style: none;
+    transition: 0.4s;
+}
+button:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+.top-txt{
+    position: absolute;
+    margin: 3% 10%;
+    color: #fff;
+  
+}
+.top-txt span{
+    letter-spacing: 5px;
+}
+.top-txt h1{
+    font-size:3vw;
+}
+.top-txt span p{
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    color: rgb(256, 256, 256);
+    font-size: 2.5vw;
+}
+.bottom{
+    display: flex;
+    height:40vh ;
+    width:100% ;
+    position: absolute;
+}
+.b-one{
+    width: 25%;
+    min-height: inherit;
+    /* background-image: url(lightning.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+.b-one h1{
+    color: black;
+    padding: 35px 60px;
+    font-size: 2.5vw;
+}
+.b-two{
+    width: 25%;
+    min-height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+.b-three{
+    width: 25%;
+    min-height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+.b-four{
+    width: 25%;
+    min-height: inherit;
+    /* background-image: url(flwr.jpg); */
+    background-position: center;
+    background-size: cover; 
+
+}
+@media only screen and (max-width:500px){
+    .top{
+     flex-direction: column;
+     align-items: flex-start;
+  }
+  .logo{
+    font-size: 5vw;
+  }
+  button{
+    padding: 2vw;
+  }
+  .menu a{
+    display: none;
+  }
+  .top-txt h1{
+    font-size: 5vw;
+  }
+  .top-txt span p{
+    padding: 15px 0px;
+    letter-spacing: 1px;
+    color: rgb(256,256,256);
+    font-size: 3.5vw;
+}
+  .bottom{
+     flex-direction: column;
+  }
+  .b-one{
+     width: 100%;
+     /* height: 20vh; */
+     text-align: center;
+    }
+     
+  .b-two{
+     width: 100%;
+    }
+  .b-three{
+     width: 100%;
+    }
+    .b-four{
+        width: 100%;
+    }
+    .menu-icon{
+        display: flex;
+    }
+ }
